@@ -1,0 +1,564 @@
+
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Prata&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Prata&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
+
+body {
+    background-image: url(bg-body1.jpg);  
+    height: 100%; /* Sayfa yüksekliğini %100 yap */
+}
+
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #353530;
+    padding-left: 15px;
+    padding-right: 15px;
+    height: 120px;
+    min-width: 992px;
+    flex-wrap: wrap; 
+    margin-top: 40px;
+}
+
+
+header .logo img {
+    height: 100px;  
+    margin-right: 10px;
+}
+
+header nav {
+    display: flex;
+    justify-content: center;
+    
+}
+
+header nav ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    padding: 0;
+    margin: 0;
+}
+
+header nav ul li {
+    margin-right: 20px;
+}
+
+header nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+header nav ul li a:hover {
+    color: #fcd462; 
+}
+
+
+.menu-right-buttons {
+    display: flex;
+    width: 278.438px;
+    height: 65px;
+    gap: 5px;
+}
+
+.menu-right-buttons div {
+    width: 65px;
+    height: 65px;
+    border: 2px solid rgba(133, 133, 133, 0.2);
+    text-align: center;
+    line-height: 65px; 
+    padding: 0;
+    color: #fff;
+    background-color: transparent; 
+    transition: background-color 0.3s ease; 
+}
+
+.menu-right-buttons div a {
+    display: block;
+    width: 100%;
+    height: 100%;
+    text-decoration: none;
+    color: inherit; 
+}
+
+.menu-right-buttons div:hover {
+    background-color: rgba(133, 133, 133, 0.1); 
+    border-color: #fcd462;
+    color: #fcd462;
+}
+
+
+
+@media (max-width: 1024px) {
+    /* Tabletler için */
+    header {
+        height: 100px;
+        min-width: 768px;
+    }
+
+    .logo img {
+        height: 80px;
+    }
+
+    header nav ul li {
+        margin-right: 15px;
+    }
+
+    header nav ul li a {
+        font-size: 16px;
+    }
+
+    .menu-right-buttons {
+        width: 220px;
+        gap: 4px;
+    }
+}
+
+@media (max-width: 768px) {
+    
+    header {
+        flex-direction: column;
+        height: auto;
+        padding: 10px;
+    }
+
+    .logo img {
+        height: 60px;
+        margin: 0 auto 10px;
+    }
+
+    header nav ul {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    header nav ul li {
+        margin-right: 0;
+        margin-bottom: 10px;
+    }
+
+    header nav ul li a {
+        font-size: 16px;
+    }
+
+    .menu-right-buttons {
+        width: 100%;
+        justify-content: space-between;
+        gap: 10px;
+    }
+
+    .menu-right-buttons div {
+        width: 45px;
+        height: 45px;
+        line-height: 45px;
+    }
+}
+/* HEADER END */
+.partthree{
+
+    display: flex;
+    justify-content: center;
+    background-color: #1c1b19;
+    padding: 115px 15px;    
+    background-image: url(backround-image1.jpg);
+    background-position: bottom right;
+    background-repeat: no-repeat;
+}   
+.container{
+    width: 1170px;
+    display: flex;
+    align-items: stretch;
+   
+    
+}
+.left{
+    display: flex;
+    align-items: stretch;
+    column-gap: 30px;
+}
+.box-left{
+    display: flex;
+    flex-direction: column;
+    row-gap: 30px;
+}
+.card-top,.card-bottom{
+    background-color: #353530;
+    width: 265.5px;
+    height: 315px;
+}
+.card-top{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+.box-right{
+    display: flex;
+    flex-direction: column;
+    row-gap: 30px;
+    padding-top: 50px;
+}
+.icon{
+    width: 70px;
+    height: 72.4px;
+}
+.card-top h4 {
+    width: 210px;
+    height: 36px;
+    margin-bottom: 20px;
+}
+.card-top h4 a{
+    color: #fff;
+    font-size: 30px;
+    letter-spacing: -1px;
+    font-family: "Prata", serif;
+    font-weight: 400;
+    text-decoration: none;
+    
+    
+}
+.card-top h4 a:hover{
+    color: #fcd462;
+    transition: all 0.3sease-out 0s;
+}
+.card-top p{
+    width: 202.5px;
+    height: 62.22px;
+    font-size: 14px;
+    font-family: "Rubik", sans-serif;
+    font-weight: normal;
+    font-style: normal;
+    color: #a3a3a3;
+        line-height: 1.6;
+}
+
+.right{
+    
+    background-color: aqua;
+    width: 555px;
+    height: 500px;
+    margin-left: 50px;
+    margin-top: 100px;
+    background-color: transparent;
+}
+.icon2{
+    width:70.01px ;
+    height: 72.39px;
+}
+.card-bottom h4{
+    width:202.5px ;
+    height: 72px;
+    margin-bottom: 20px;
+}
+.card-bottom h4 a{
+    color: #fff;
+    font-size: 30px;
+    letter-spacing: -1px;
+    font-family: "Prata", serif;
+    font-weight: 400;
+    text-decoration: none;
+    
+}
+.card-bottom p{
+    width: 202.5px;
+    height: 67.22px;
+    font-size: 14px;
+    font-family: "Rubik", sans-serif;
+    font-weight: normal;
+    font-style: normal;
+    color:#fff;
+    line-height: 1.6;
+    
+       
+}
+.card-bottom {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 0;
+    box-sizing: border-box;
+}
+.explain{
+    font-size: 70px;
+    line-height: 1.125;
+    letter-spacing: -1px;
+    color: #fff;
+    width: 455px;
+    height: 236px;
+    font-family: "Prata", serif;
+    font-weight: 400;
+    margin: 0px;
+}
+.aboutus{
+    font-size: 14px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    padding-bottom: 20px;
+    color: #a3a3a3;
+    width: 94px;
+    height: 42px;
+    display: inline-block;
+    font-family: "Rubik", sans-serif;
+    
+}
+.pp{
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    unicode-bidi: isolate;
+    font-family: "Rubik", sans-serif;
+    color: #a3a3a3;
+    line-height: 1.6;
+    font-size: 14px;
+}
+.contact{
+    background-color: #fcd462;
+    width: 200.21px;
+    height: 62.4px;
+    max-width: 101px;
+    max-height: 60px;
+    display: inline-block;
+    font-weight: 700;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: middle;
+    -webkit-user-select: none;
+    user-select: none;
+    padding: 0 48px;
+    font-size: 14px;
+    line-height: 60px;
+    border-radius: 0px;
+    cursor: pointer;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    color: #a3a3a3;
+    border: 2px solid #fcd462;
+    margin-top: 40px;
+}
+.right a{
+    color: #fff;
+    font-family: "Rubik", sans-serif;
+    font-style: normal;
+    text-decoration: none;
+    
+
+}
+.right a:hover{
+    text-decoration: none;
+    background-color: transparent;
+    transition: all 0.3sease-out 0s;
+}
+.part-four {
+    padding-bottom: 115px;
+    padding-top: 115px;
+    background-color: #353530;
+    
+}
+
+.container-2 {
+    max-width: 1170px;
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+    height: 627.319px;
+    
+    
+}
+
+.title-tag {
+    width: 167.325px;
+    height: 22.394px;
+    color: #a3a3a3;
+    font-family: "Rubik", sans-serif;
+    font-size: 14px;  /* Yazı boyutunu belirleyebilirsiniz */
+    font-weight: bold; /* Stil ekleyebilirsiniz */
+    text-transform: uppercase; /* Başlık stilini ekleyebilirsiniz */
+    letter-spacing: 2px; /* Harfler arası mesafe */
+    padding-bottom: 20px;
+    
+}
+.container-2 h2 {
+    font-size: 70px;
+    line-height: 1.125;
+    letter-spacing: -1px;
+    color: #fff;
+    font-family: "Prata", serif;
+    font-weight: 400;
+    width: 100%; /* Genişliği %100 yaparak yazıyı yatayda ortalamaya yardımcı olur */
+    text-align: center; /* Yazıyı yatayda ortalar */
+    margin-top: 20px;
+    width: 1140px;
+    height: 78px;
+    
+}
+.top{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; 
+}
+.text-center{
+    width: 1140px;
+    height: 22.40px;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+    
+}
+.text-center a{
+    color: #fcd462;
+    display: flex;
+    justify-content: center;
+    text-decoration: none;
+    background-color: transparent;
+    font-family: "Rubik", sans-serif;
+    font-weight: normal;
+    font-style: normal;
+    font-size: 14px;
+    line-height: 1.6;
+    
+}
+.row{
+    display: flex;
+    flex-wrap: wrap;
+    margin-right: -15px;
+    margin-left: -15px;
+    width: 1170px;
+    height: 358.800px;
+    
+}
+.try{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; 
+}
+.box-1{
+    position: relative;
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+    width: 262.500px;
+    height: 358.800px;
+}
+.box-2{
+    width: 262.500px;
+    height: 358.800px;
+    padding-right: 15px;
+    padding-left: 15px
+    
+}
+.box-3{
+    width: 262.500px;
+    height: 358.800px;
+    padding-right: 15px;
+    padding-left: 15px
+}
+.box-4{
+    width: 262.500px;
+    height: 358.800px;
+    padding-right: 15px;
+    padding-left: 15px
+}
+.apartment-box{
+    margin-top: 30px;
+    overflow: hidden;
+    width: 262.5px;
+    height: 328.800px;
+    
+
+}
+.image-box{
+    width: 262.500px;
+    height: 184.463px;
+    
+}
+  
+    
+
+.content-box{
+    background-color: #353530;
+    font-size: 14px;
+    text-align: center;
+    padding: 30px 20px 0;
+    position: relative;
+    width: 222.500px;
+    height: 114.338px;
+}
+.apartment-box .image-box img{
+    width: 100%;
+    object-position: center;
+    object-fit: cover;
+    max-width: 100%;
+    
+}
+.title{
+    font-size: 22px;
+    margin-bottom: 20px;
+    letter-spacing: -1px;
+    font-family: "Prata", serif;
+    font-weight: 400;
+    margin: 0px;
+    line-height: 1.2;
+
+}
+.title-section{
+    color: #fff;
+    text-decoration: none;
+    
+}
+.title-section:hover{
+    color: #fcd462;
+    
+}
+.content-box p{
+    color: #bdbdbd;
+    margin: 0px;
+    font-size: 14px;
+    text-align: center;
+    font-family: "Rubik", sans-serif;
+    font-weight: normal;
+    font-style: normal;
+    line-height: 1.6;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.content-box span{
+    font-size: 16px;
+    font-weight: 700;
+    color: #fcd462;
+    font-family: "Rubik", sans-serif;
+    line-height: 1.6;
+    
+}
+
+
+
+
+
+
+
+
+    
+
+
+
+
+
+
+
+
